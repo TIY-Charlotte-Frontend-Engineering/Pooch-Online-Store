@@ -1,5 +1,10 @@
-body .popular {
-    img {
-        width: 150px;
+body {
+    .popular {
+        img {
+            width: 150px;
+        }
+    }
+    ul {
+      list-style: none;
     }
 }

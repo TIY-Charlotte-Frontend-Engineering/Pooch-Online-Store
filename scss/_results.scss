@@ -1,5 +1,10 @@
-body .results {
-    img {
-        width: 150px;
+body {
+    .results {
+        img {
+            width: 150px;
+        }
+    }
+    ul {
+      list-style: none;
     }
 }

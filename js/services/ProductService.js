@@ -24,8 +24,9 @@ module.exports = {
       getCarts: function () {
         return carts;
       },
-
+      
       search: function (search) {
+        searchResults = [];
         $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
           console.log(response);
           for (let i = 0; i < response.data.length; i++) {
