@@ -1,6 +1,9 @@
 body {
     .popular {
-        img {
+        @include grid-row();
+        img, .item {
+            @include grid-column-offset(1);
+            @include grid-column(3);
             width: 150px;
         }
     }
