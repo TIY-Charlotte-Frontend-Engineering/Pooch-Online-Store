@@ -1,8 +1,19 @@
 .head {
+    @include grid-row();
     img {
+        @include grid-column-offset(2);
+        @include grid-column(1);
         width: 200px;
+        &:hover {
+            opacity: 0.75;
+            transition: ease 400ms;
+        }
     }
     h1 {
         display: inline-block;
+        @include grid-column(8);
+    }
+    ul {
+      list-style: none;
     }
 }

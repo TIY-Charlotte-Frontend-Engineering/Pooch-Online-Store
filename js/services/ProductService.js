@@ -26,6 +26,7 @@ module.exports = {
       },
 
       search: function (search) {
+        searchResults = [];
         $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
           console.log(response);
           for (let i = 0; i < response.data.length; i++) {
@@ -36,8 +37,12 @@ module.exports = {
               price: response.data[i].price,
             })
           }
-
+          if (response.data.length === 0) {
+            console.log('no results');
+            
+          }
         });
+
         return searchResults;
         // this return statement was too nested and not returning properly
       },

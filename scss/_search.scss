@@ -1,0 +1,22 @@
+.search {
+  @include grid-row();
+  
+  input {
+    @include grid-column(8);
+    @include grid-column-offset(2);
+    font-size: 1.5em; 
+  }
+
+  a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    &:hover {
+      color: black;
+      background-color: white;
+      transition: ease 400ms;
+    }
+  }
+
+}

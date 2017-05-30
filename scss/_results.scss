@@ -1,5 +1,13 @@
-body .results {
-    img {
-        width: 150px;
+body {
+    .results {
+        @include grid-row();
+        img, .item {
+            @include grid-column-offset(1);
+            @include grid-column(3);
+            width: 150px;
+        }
+    }
+    ul {
+      list-style: none;
     }
 }
