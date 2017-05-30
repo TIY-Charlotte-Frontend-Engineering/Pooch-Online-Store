@@ -1,7 +1,9 @@
 
-<li>
+<li ng-repeat="item in items">
     <img ng-src="{{$ctrl.which.pic}}">
-    <p>{{ $ctrl.which.name }}</p>
-    <p>{{ $ctrl.which.brand }}</p>
-    <p>$ {{ $ctrl.which.price.toFixed(2) }}</p>
+    <p>{{$ctrl.which.name}}</p>
+    <p>{{$ctrl.which.brand}}</p>
+    <p>{{$ctrl.which.price.toFixed(2)}}</p>
+    
 </li>
+

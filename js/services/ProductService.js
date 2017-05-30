@@ -3,7 +3,7 @@ module.exports = {
   func: function ($http) {
     let items = [];
     let searchResults = [];
-    let carts = [];
+    //let carts = [];
 
     $http.get('https://tiy-28202.herokuapp.com/shop/items').then(function (response) {
       for (let i = 0; i < response.data.length; i++) {
@@ -21,9 +21,9 @@ module.exports = {
       getItems: function () {
         return items;
       },
-      getCarts: function () {
-        return carts;
-      },
+      // getCarts: function () {
+      //   return carts;
+      // },
 
       search: function (search) {
         $http.get('https://tiy-28202.herokuapp.com/shop/search?q=' + search).then(function (response) {
