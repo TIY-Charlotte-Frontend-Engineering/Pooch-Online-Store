@@ -4,6 +4,7 @@ module.exports = {
         templateUrl: "templates/item.html",
         controller: "ItemListController",
         bindings: {
+            // $ctrl.which
             which: "<",
         }
     }

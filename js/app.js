@@ -2,7 +2,8 @@ const app = angular.module('PetShopApp', ['ui.router']);
 
 // require service
 const services = [
-    require('./services/ProductService')
+    require('./services/ProductService'),
+    require('./services/AddService')
 ];
 
 // loop all services
@@ -16,6 +17,7 @@ const controllers = [
     require('./controllers/search'),
     require('./controllers/results'),
     require('./controllers/cart'),
+    require('./controllers/add')
 ];
 
 // loop all controllers
@@ -30,6 +32,7 @@ const components = [
     require('./components/cart'),
     require('./components/opening'),
     require('./components/results'),
+    require('./components/add')
 ]
 
 // loop all components
@@ -49,6 +52,17 @@ app.config( function ($stateProvider) {
         name: 'results',
         url: '/results/:searchstring',
         component: 'results',
+    });
+     $stateProvider.state({
+        name: 'add',
+        url: '/add',
+        component: 'add',
+    });
+
+        $stateProvider.state({
+        name: 'cart',
+        url: '/cart',
+        component: 'cart',
     });
 
 })
