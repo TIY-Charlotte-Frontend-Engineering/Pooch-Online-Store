@@ -1,17 +1,20 @@
 module.exports={
     name: 'AddService',
     func: function ($http){
-        let items=[];
-        let carts=[];
+        let items=[]; // cart
+        // let carts=[];
 
+     
         return {
              addItem:function(item){
-                  
+                 
+               items.push(item) 
+                 
              },
 
-            getCarts: function(){
-                return carts;
-            },
+            // getCarts: function(){
+            //     return carts;
+            //  },
             getAddItems(){
                 return items;
             }
