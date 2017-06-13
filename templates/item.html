@@ -1,9 +1,12 @@
 
-<li ng-repeat="item in items">
+<div>
     <img ng-src="{{$ctrl.which.pic}}">
     <p>{{$ctrl.which.name}}</p>
     <p>{{$ctrl.which.brand}}</p>
     <p>{{$ctrl.which.price.toFixed(2)}}</p>
-    
-</li>
-
+    <!--
+        which is the name of your binding. this is how we specify
+        what item should be added to the cart
+    -->
+    <add which="$ctrl.which"></add>
+</div>

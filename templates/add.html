@@ -1,12 +1,2 @@
-<section class="add">
-    <ul>    
-        <li ng-repeat="item in items">
-            <img ng-src="{{$ctrl.which.pic}}">
-            <p>{{$ctrl.which.name}}</p>
-            <p>{{$ctrl.which.image}}</p>
-            <P>{{Sctrl.which.brand}}</P>
-            <p>{{$ctrl.which.price.toFixed(2)}}</p>
-            <button ng-click="add()">Add Item</button>
-        </li>
-    </ul>
-</section>
+
+     <button ng-click="add($ctrl.which)">Add To Cart</button>

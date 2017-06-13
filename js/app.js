@@ -63,7 +63,7 @@ app.config( function ($stateProvider) {
         name: 'cart',
         url: '/cart',
         component: 'cart',
-    });
+    }); 
 
 })
 
